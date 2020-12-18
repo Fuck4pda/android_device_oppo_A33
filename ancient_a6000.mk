@@ -20,6 +20,7 @@ $(call inherit-product, vendor/ancient/config/common_full_phone.mk))
 
 # Ancient
 ANCIENT_NOGAPPS := true
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
