@@ -16,7 +16,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/lenovo/a6000/device.mk)
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk))
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Ancient
 ANCIENT_NOGAPPS := true
