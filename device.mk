@@ -666,4 +666,4 @@ PRODUCT_COPY_FILES += \
 # Inherit common Android Go defaults.
 $(call inherit-product, build/make/target/product/go_defaults.mk)
 
-$(call inherit-product, vendor/lenovo/a6000/a6000-vendor.mk)
+$(call inherit-product, vendor/oppo/A33/A33-vendor.mk)

@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/lenovo/a6000
+DEVICE_PATH := device/oppo/A33
 
 # APEX
 TARGET_FLATTEN_APEX := true
@@ -48,11 +48,11 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 loop.max_part=7 pm.sleep_mode=1 vmalloc=400M  androidboot.memcg=true
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_KERNEL_SOURCE := kernel/lenovo/a6000
+TARGET_KERNEL_SOURCE := kernel/oppo/A33
 TOP_PATH := $(realpath $(TOP))
 KERNEL_TOOLCHAIN := $(TOP_PATH)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
-TARGET_KERNEL_CONFIG := lineageos_a6000_defconfig
+TARGET_KERNEL_CONFIG := lineageos_a33_defconfig
 
 # File System
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -219,4 +219,4 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 
 DISABLE_APEX_TEST_MODULE := true
 # Proprietary Prebuilt
--include vendor/lenovo/a6000/BoardConfigVendor.mk
+-include vendor/oppo/A33/BoardConfigVendor.mk

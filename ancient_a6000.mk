@@ -15,7 +15,7 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, device/lenovo/a6000/device.mk)
+$(call inherit-product, device/oppo/A33/device.mk)
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Ancient
@@ -26,33 +26,33 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := Kraft-T,a6000,K30-T,A6000,Kraft-W,Kraft-C,k30t,msm8916,Kraft-A6000,wt86518
+TARGET_OTA_ASSERT_DEVICE := A33f,A33,A33fw,a33f,a33,a33fw,msm8916
 
-TARGET_VENDOR := Lenovo
-PRODUCT_DEVICE := a6000
-PRODUCT_NAME := ancient_a6000
-BOARD_VENDOR := Lenovo
-PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := A6000
-PRODUCT_MANUFACTURER := Lenovo
+TARGET_VENDOR := OPPO
+PRODUCT_DEVICE := A33
+PRODUCT_NAME := ancient_A33
+BOARD_VENDOR := OPPO
+PRODUCT_BRAND := OPPO
+PRODUCT_MODEL := A33
+PRODUCT_MANUFACTURER := OPPO
 
 # Device Identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-     PRODUCT_MODEL="Lenovo A6000" \
-     PRODUCT_NAME="Kraft-A6000" \
-     PRODUCT_DEVICE="Kraft-A6000"
+     PRODUCT_MODEL="OPPO A33" \
+     PRODUCT_NAME="OPPO A33F" \
+     PRODUCT_DEVICE="OPPO A33F"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-     ro.build.product=Kraft-A6000
+     ro.build.product=OPPO A33F
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="Kraft-A6000-user 5.0.2 LRX22G Kraft-A6000_S061_160727 release-keys"
+PRIVATE_BUILD_DESC="2014817-user 5.1.1 LMY47V V9.2.5.0.LHJMIEK release-keys"
 
-BUILD_FINGERPRINT := Lenovo/Kraft-A6000/Kraft-A6000:5.0.2/LRX22G/Kraft-A6000_S061_160727:user/release-keys
+BUILD_FINGERPRINT := msm8916_32-user 5.1.1 LMY47V eng.root.20170531 release-keys"
 
 # GMS
-PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Trust
 PRODUCT_PACKAGES += \
